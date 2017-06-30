@@ -1,0 +1,143 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- greeting.aiml -->
+
+    <category>
+        <pattern>HELLO *</pattern>
+        <template>
+          <random>
+            <li>Hi</li>
+            <li>Hi there</li>
+            <li>Hello</li>
+            <li>Oh, hello</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+          <random>
+            <li>Hi</li>
+            <li>Hi there</li>
+            <li>Hello</li>
+            <li>Oh, hello</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+          <random>
+            <li>Hi</li>
+            <li>Hi there</li>
+            <li>Hello</li>
+            <li>Oh, hello</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+          <random>
+            <li>Hi</li>
+            <li>Hi there</li>
+            <li>Hello</li>
+            <li>Oh, hello</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD *</pattern>
+        <template>
+          <srai>GOOD <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+          Good morning
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD AFTERNOON</pattern>
+        <template>
+          Good afternoon
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD EVENING</pattern>
+        <template>
+          Good evening
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD NIGHT</pattern>
+        <template>
+          Good night
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD DAY</pattern>
+        <template>
+          Good day
+        </template>
+    </category>
+
+    <category>
+       <pattern>MY NAME IS *</pattern>
+       <template>
+          Hello!<think><set name = "username"> <star/></set></think>
+       </template>
+    </category>
+
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+          <random>
+            <li>Never better</li>
+            <li>I'm good</li>
+            <li>Not bad</li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+          <random>
+            <li>Goodbye<get name = "username"/></li>
+            <li>Oh bye<get name = "username"/></li>
+            <li>Bye<get name = "username"/></li>
+          </random>
+        </template>
+    </category>
+
+    <category>
+       <pattern>BYE</pattern>
+       <template>
+          <srai>GOODBYE</srai>
+       </template>
+    </category>
+
+    <category>
+        <pattern>TALK TO YOU SOON</pattern>
+        <template>
+          See you soon<get name = "username"/>
+        </template>
+    </category>
+</aiml>
